@@ -1,7 +1,7 @@
 {
   "name": "graffle",
   "version": "0.0.0",
-  "description": "learning graph databases and gundb",
+  "description": "learning graph databases in javascript",
   "main": "lib/main/app.js",
   "directories": {
     "doc": "docs"
@@ -39,7 +39,5 @@
     "gulp-plumber": "^1.1.0",
     "gulp-regex-rename": "^0.1.0"
   },
-  "dependencies": {
-    "gun-level": "^3.1.0"
-  }
+  "dependencies": {}
 }

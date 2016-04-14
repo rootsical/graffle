@@ -1,6 +1,6 @@
 GRAFFLE
 =======
-application to learn graph databases and [gundb](https://github.com/amark/gun). i am just using this as a learning exercise and am only working on it from time to time..
+application to learn graph databases in javascript. i am just using this as a learning exercise and am only working on it from time to time..
 
 [SETUP & DEPENDENCIES](./docs/setup_dependencies.md)
 
@@ -17,4 +17,4 @@ application to learn graph databases and [gundb](https://github.com/amark/gun). 
 - [gulp and nodemon](./docs/gulp_nodemon.md)
 - [electron](./docs/electron.md)
 - [systemjs](./docs/systemjs.md)
-- [gundb](./docs/gundb.md)
+- [leveldb](./docs/leveldb.md)
