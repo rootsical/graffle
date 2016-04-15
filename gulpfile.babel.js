@@ -70,14 +70,17 @@ let electronMocha = function(type, done){
   };
 };
 
-gulp.task('test:main', function(done){
-  // console.log('starting test:main');
-  electronMocha("main", done);
-});
+gulp.task('test:main', gulp.series('transpile', function electronMochaMain(done){
+    // console.log('starting test:main');
+    electronMocha("main", done);
+  })
+);
 
-gulp.task('test:renderer', function(done){
-  electronMocha("renderer", done);
-});
+gulp.task('test:renderer', gulp.series('transpile', function electronMochaRenderer(done){
+    
+    electronMocha("renderer", done);
+  })
+);
 
 gulp.task('watch', function() {
   gulp.watch(['src/**/*.src.js'], gulp.series('transpile', electron.restart));
