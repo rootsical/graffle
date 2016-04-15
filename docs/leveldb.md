@@ -1,8 +1,8 @@
 #leveldb
 
 from:  
-https://github.com/level/levelup#basic-usage
-`npm install levelup leveldown`
+https://github.com/level/levelup#basic-usage  
+`npm install levelup leveldown`  
 
 ```js
 import levelup from 'levelup';
@@ -19,7 +19,7 @@ db.put('surname', 'smith', function (err) {
 };
 ```
 
-get an entry from the database:
+get an entry from the database:  
 ```js
 db.get('surname', function(err, value){
    if (err) return console.log('error is: ', err);
@@ -28,3 +28,6 @@ db.get('surname', function(err, value){
    // logs out 'surname: smith'
 });
 ```
+a great article:  
+http://dailyjs.com/2013/05/02/leveldb-and-node-2/
+
