@@ -49,13 +49,16 @@ let electronMocha = function(type, done){
     console.log("please specify 'main' or 'rendered'");
     return;
   }
+
   if(test){
     // electronMocha.stdout.setEncoding('utf8');
     test.stdout.on('data', function (data) {
+      // console.log('stdout.on');
       process.stdout.write(data.toString());
     });
 
     test.on('error', function (err) {
+      // console.log('on');
       console.log('Failed to start child process.');
     });
 
@@ -68,6 +71,7 @@ let electronMocha = function(type, done){
 };
 
 gulp.task('test:main', function(done){
+  // console.log('starting test:main');
   electronMocha("main", done);
 });
 

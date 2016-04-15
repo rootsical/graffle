@@ -1,5 +1,6 @@
 TO DO (now):
 ------------
+- [ ] concatenate README.md in gulp task for easier viewing
 - [ ] look at representing nodes/edges in javascript
 - [ ] find suitable database for simple persistence
 - [ ] learn gremlin language
