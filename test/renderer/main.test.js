@@ -1,12 +1,12 @@
-import expect from 'expect.js';
+import assert from 'assert';
 
 describe('renderer', function(){
 
   it('runs a simple renderer test to access document.body', function(){
-    expect(document.body.tagName.toLowerCase()).to.be('body');
+    assert.equal(document.body.tagName.toLowerCase(), 'body');
   });
 
   it('runs a simple test', function(){
-    expect(1).to.be(1);
+    assert.equal(1, 1);
   });
 });
