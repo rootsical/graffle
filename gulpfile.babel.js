@@ -57,6 +57,11 @@ let electronMocha = function(type, done){
       process.stdout.write(data.toString());
     });
 
+    test.stderr.on('data', function (data) {
+      // console.log('stderr.on');
+      process.stderr.write(data.toString());
+    });
+
     test.on('error', function (err) {
       // console.log('on');
       console.log('Failed to start child process.');

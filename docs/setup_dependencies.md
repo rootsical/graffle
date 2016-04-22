@@ -19,7 +19,7 @@ npm install -g gulp-cli electron-prebuilt mocha electron-mocha cult
 
 ## PROJECT DEPENDENCIES
 ```
-npm install --save systemjs
+// none at the moment
 ```
 
 ## DEVELOPMENT DEPENDENCIES
@@ -54,3 +54,8 @@ to install a package before a particular version:
 
 list global packages:  
 `npm list -g`
+
+update packages:  
+`npm update`  
+(add `-g` flag for global)
+
