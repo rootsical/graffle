@@ -26,3 +26,13 @@ create .babelrc file
   "plugins": ["transform-es2015-modules-commonjs"]
 }
 ```
+
+if you want support for generators:  
+`npm install babel-plugin-transform-runtime`
+
+and in .babelrc add:
+`
+{
+  "plugins": ['transform-runtime']
+}
+`
