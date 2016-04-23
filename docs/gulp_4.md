@@ -33,3 +33,18 @@ gulp.task('transpile', function() {
 to monitor gulpfile and reload gulp  
 https://github.com/typicode/cult
 >npm install -g gulp cult
+
+### task dependencies ###
+to run 'preTask' each time before running 'myTask', do:  
+```js
+gulp.task('preTask', function(){
+  // do stuff
+});
+
+gulp.task('myTask', gulp.series('preTask', function nameYourFunction(done){
+    
+    // do stuff
+    done();
+  })
+);
+```

@@ -57,6 +57,11 @@ let electronMocha = function(type, done){
       process.stdout.write(data.toString());
     });
 
+    test.stderr.on('data', function (data) {
+      // console.log('stderr.on');
+      process.stderr.write(data.toString());
+    });
+
     test.on('error', function (err) {
       // console.log('on');
       console.log('Failed to start child process.');
@@ -70,14 +75,17 @@ let electronMocha = function(type, done){
   };
 };
 
-gulp.task('test:main', function(done){
-  // console.log('starting test:main');
-  electronMocha("main", done);
-});
+gulp.task('test:main', gulp.series('transpile', function electronMochaMain(done){
+    // console.log('starting test:main');
+    electronMocha("main", done);
+  })
+);
 
-gulp.task('test:renderer', function(done){
-  electronMocha("renderer", done);
-});
+gulp.task('test:renderer', gulp.series('transpile', function electronMochaRenderer(done){
+    
+    electronMocha("renderer", done);
+  })
+);
 
 gulp.task('watch', function() {
   gulp.watch(['src/**/*.src.js'], gulp.series('transpile', electron.restart));
