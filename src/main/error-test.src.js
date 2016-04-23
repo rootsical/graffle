@@ -4,11 +4,11 @@ function printMsg() {
   console.log(msg);
 }
 
-let crap = function(crap){
+/*let crap = function(crap){
   console.log(crap)
-})mistake
+})mistake*/
 
 export {msg, printMsg};
 
 
-throw new Error("error thrown on purpose");
+// throw new Error("error thrown on purpose");
