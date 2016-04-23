@@ -1,6 +1,6 @@
 TO DO (now):
 ------------
-- [ ] error reporting from transpiled code
+- [ ] learn how to vary tasks according to environment (production/development)
 - [ ] remove leveldb docs
 - [ ] concatenate README.md in gulp task for easier viewing
 - [ ] look at representing nodes/edges in javascript
@@ -17,6 +17,7 @@ TO DO (long term):
 
 DONE:
 -----
+- [x] error reporting from transpiled code (sourcemaps)
 - [x] work out if you can just transpile modules (with babel) and use other es next features natively
 
 ABANDONED:

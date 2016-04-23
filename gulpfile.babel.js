@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import babel from 'gulp-babel';
 import nodemon from 'gulp-nodemon';
 import plumber from 'gulp-plumber';
+import sourcemaps from 'gulp-sourcemaps';
 import rename from 'gulp-regex-rename';
 import electronConnect from 'electron-connect';
 import childProcess from 'child_process';
@@ -20,11 +21,13 @@ gulp.task('transpile', function() {
       base: 'src'
     })
     .pipe(plumber())
-    .pipe(babel({
-      babelrc: false,
-      plugins: ['babel-plugin-transform-es2015-modules-commonjs']
-    }))
-    .pipe(rename(/\.src\.js$/, '.js'))
+    .pipe(sourcemaps.init())
+      .pipe(babel({
+        babelrc: false,
+        plugins: ['babel-plugin-transform-es2015-modules-commonjs']
+      }))
+      .pipe(rename(/\.src\.js$/, '.js'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('lib'));
 });
 
