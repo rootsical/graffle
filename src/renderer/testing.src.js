@@ -2,6 +2,7 @@
 // info from:
 // http://electron.atom.io/docs/v0.37.5/api/ipc-main/
 import {ipcRenderer} from 'electron';
+import {msg, printMsg} from '../../lib/main/error-test.js';
 
 export let message = "yo!";
 
@@ -16,3 +17,5 @@ export function sendMessage(){
 ipcRenderer.on('reply', function(event, arg) {
   console.log(arg); // prints "pong"
 });
+
+printMsg();
