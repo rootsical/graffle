@@ -80,6 +80,12 @@ git commit -m "<commit message>"
 ```
 (if directory is untracked, just remove directory manually)
 
+remove all untracked files and clear unstaged changes:  
+```
+git clean -df
+git checkout -- .
+```
+
 if git is not ignoring a file you would like to ignore, first make sure it's in .gitignore.  
 then:  
 `git rm --cached <filename>`  
