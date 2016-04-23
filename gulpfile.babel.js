@@ -98,6 +98,7 @@ gulp.task('test:renderer', gulp.series('transpile', function electronMochaRender
 gulp.task('watch', function() {
   gulp.watch(['src/**/*.src.js'], gulp.series('transpile', electron.restart));
   gulp.watch(['views/**/*.html'], gulp.series(electron.reload));
+  gulp.watch(['docs/**/*.md'], gulp.series('docs'));
 });
 
 gulp.task('default',
