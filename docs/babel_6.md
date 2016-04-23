@@ -2,7 +2,7 @@
 
 ###install babel
 `npm install --save-dev babel-core babel-plugin-transform-es2015-modules-commonjs gulp-babel gulp-plumber`  
-- gulp-babel is necessary for use with gulp as is gulp-plumber which suppresses errors 
+- gulp-babel is necessary for use with gulp. gulp-plumber is also recommended as it suppresses errors which can break things a bit.
 
 ###gulpfile  
 ```javascript

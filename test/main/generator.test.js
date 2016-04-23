@@ -20,7 +20,7 @@ describe('generators', function(done){
     });
   };
 
-  it.only('use generator with promises', function(done){
+  it('use generator with promises', function(done){
     
     function *main(){
       try {

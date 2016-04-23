@@ -26,7 +26,7 @@ describe('file system utils', function(){
   it('write simple message to a file', function(){
     let msg = 'Hello, World!';
     fs.writeFile(file, msg, function (err) {
-      if (err) return console.log('error: ', err);
+      if (err) return console.log('write simple message to a file: ', err);
       fs.readFile(file, 'utf8', function(err, value){
         if (err) return console.log('error: ', err);
         assert.equal(value, msg, 'value should be equal to msg');
