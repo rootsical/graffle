@@ -1,15 +1,15 @@
-#JSON
+# JSON #
 
-you can use *'fs-extra' to read/write json files:  
+you can use *'fs-extra'* to read/write json files:  
 https://github.com/jprichardson/node-fs-extra
 
-install:  
+- install:  
 `npm install --save fs-extra`
 
-use (es module syntax, via babel):  
+- use (es module syntax, via babel):  
 `import fs from 'fs-extra';`
 
-to convert object to json file:
+- to convert object to json file:
 ```js
 let file = './tmp/test.json';
 
@@ -24,7 +24,7 @@ fs.writeJSON(file, derossi, function (err) {
   console.log('json file written successfully');
 });
 ```
-to convert json file to object:  
+- to convert json file to object:  
 ```js
 let file = './tmp/test.json';
 

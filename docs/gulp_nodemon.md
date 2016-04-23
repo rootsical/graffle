@@ -1,10 +1,10 @@
-#NODEMON
+# NODEMON #
 
 ```
 npm install --save-dev gulp-nodemon
 ```
 
-```javascript
+```js
 //gulpfile.babel.js
 import nodemon from 'gulp-nodemon';
 

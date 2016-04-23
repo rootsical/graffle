@@ -1,4 +1,4 @@
-#ELECTRON
+# ELECTRON #
 
 - install `electron` command globally:  
 `npm install electron-prebuilt -g`  
@@ -7,7 +7,7 @@
 - it's important to install as a development dependency as well:  
 `npm install --save-dev electron-prebuilt`
 
-###electron-connect
+### electron-connect ###
 - to use with, gulp i like electron connect  
 https://github.com/Quramy/electron-connect  
 ```
@@ -33,7 +33,7 @@ gulp.task('watch', function(){
 });
 ```
 
-###learning resources
+### further resources ###
 - there is some interesting boilerplate here:  
 https://github.com/Quramy/electron-jsx-babel-boilerplate
 

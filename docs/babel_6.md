@@ -1,10 +1,10 @@
-#BABEL 6 SETUP
+# BABEL 6 SETUP #
 
-###install babel
+### install babel ###
 `npm install --save-dev babel-core babel-plugin-transform-es2015-modules-commonjs gulp-babel gulp-plumber`  
 - gulp-babel is necessary for use with gulp. gulp-plumber is also recommended as it handles errors which can break your process. for example, you might make a mistake whilst your files are being watched. in such cases it is more convenient that the error shows up in the console, allowing you to make necessary corrections but leaving gulp still running and watching your files. this saves you from having to restart again.
 
-###gulpfile  
+### gulpfile ###
 ```javascript
 //gulpfile.babel.js
 import babel from 'gulp-babel';
@@ -18,7 +18,7 @@ gulp.task('transpile', function() {
 });
 ```
 
-###.babelrc  
+### .babelrc ###  
 create .babelrc file
 ```javascript
 //.babelrc
@@ -27,6 +27,7 @@ create .babelrc file
 }
 ```
 
+### generators ###
 if you want support for generators:  
 `npm install babel-plugin-transform-runtime`
 
@@ -36,7 +37,7 @@ and in .babelrc add:
   "plugins": ['transform-runtime']
 }
 `
-
+### source maps ###
 to implement source-maps so that errors point to your original code, rather than the transpiled code:  
 `npm install gulp-sourcemaps --save-dev`  
 
@@ -63,3 +64,4 @@ gulp.task('transpile', function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('lib'));
 });
+```

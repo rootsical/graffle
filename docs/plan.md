@@ -1,3 +1,4 @@
+# Project Plan #
 
 representing a graph database using javascript..
 

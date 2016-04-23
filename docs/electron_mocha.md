@@ -1,12 +1,11 @@
-ELECTRON MOCHA
-==============
+# ELECTRON MOCHA #
 
-install electron-mocha:  
+- install electron-mocha:  
 `npm install -g electron-mocha@0.6.3`
 
-install expect.js:  
+- install expect.js:  
 `npm install --save-dev expect.js`
 
-electron-mocha:  
+- electron-mocha:  
 https://github.com/jprichardson/electron-mocha
 

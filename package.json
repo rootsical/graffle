@@ -34,7 +34,8 @@
     "gulp-nodemon": "^2.0.6",
     "gulp-plumber": "^1.1.0",
     "gulp-regex-rename": "^0.1.0",
-    "gulp-sourcemaps": "^2.0.0-alpha"
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "markdown-include": "^0.4.3"
   },
   "dependencies": {
     "fs-extra": "^0.26.7"

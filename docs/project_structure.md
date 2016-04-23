@@ -1,11 +1,11 @@
-PROJECT STRUCTURE
-=================
+# PROJECT STRUCTURE
 
 - **db/** *database - [GunDB](http://gun.js.org/enterprise/)*
 - **docs/**
   - github.md  
   - todo.md  
   - markdown.md
+  - README.md *will be compiled to project root using markdown-include*
 - **lib/** *javascript code*
   - common/
   - main/
@@ -24,10 +24,11 @@ PROJECT STRUCTURE
   - main.test.js
 - **views/** *views are written in html but considering handlebars templating engine*
   - main.index
-- .babelrc
+- .babelrc *configuration for transpiling with babel*
 - .gitattributes
 - .gitignore *lists what should be ignored for git repo*
-- README.md  *links to further documentation in the docs dir*
-- gulpfile.babel.js
+- README.md  *project documentation with links to further info in the docs dir*
+- gulpfile.babel.js *gulp tasks defined here*
+- markdown.json *configuration to compile docs with markdown-include*
 - package.json *lists project info and package dependencies*
 

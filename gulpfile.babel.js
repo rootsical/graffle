@@ -6,6 +6,7 @@ import sourcemaps from 'gulp-sourcemaps';
 import rename from 'gulp-regex-rename';
 import electronConnect from 'electron-connect';
 import childProcess from 'child_process';
+import markdownInclude from 'markdown-include';
 
 // using cult (https://github.com/typicode/cult) instead of gulp in order to restart gulp on changes to this gulpfile
 
@@ -29,6 +30,10 @@ gulp.task('transpile', function() {
       .pipe(rename(/\.src\.js$/, '.js'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('lib'));
+});
+
+gulp.task('docs', function(){
+  return markdownInclude.compileFiles('./markdown.json');
 });
 
 let electronMocha = function(type, done){
