@@ -1,5 +1,6 @@
 TO DO (now):
 ------------
+- [ ] error reporting from transpiled code
 - [ ] work out if you can just transpile modules and use other es next features natively
 - [ ] concatenate README.md in gulp task for easier viewing
 - [ ] look at representing nodes/edges in javascript
