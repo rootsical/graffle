@@ -83,13 +83,13 @@ let electronMocha = function(type, done){
   };
 };
 
-gulp.task('test:main', gulp.series('transpile', function electronMochaMain(done){
+gulp.task('test:main', gulp.series('docs', 'transpile', function electronMochaMain(done){
     // console.log('starting test:main');
     electronMocha("main", done);
   })
 );
 
-gulp.task('test:renderer', gulp.series('transpile', function electronMochaRenderer(done){
+gulp.task('test:renderer', gulp.series('docs', 'transpile', function electronMochaRenderer(done){
     
     electronMocha("renderer", done);
   })
