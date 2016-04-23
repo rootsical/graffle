@@ -1,8 +1,8 @@
 # GULP 4 SETUP #
 
 ### global ###
-`npm install -g gulp-cli`
-(The command used to be `npm install -g "gulpjs/gulp-cli#4.0"`).
+`npm install -g gulp-cli`  
+(command used to be `npm install -g "gulpjs/gulp-cli#4.0"`).
 
 ### local ###
 `npm install --save-dev "gulpjs/gulp#4.0"`
@@ -31,7 +31,7 @@ gulp.task('transpile', function() {
 ### cult ###
 to monitor gulpfile and reload gulp  
 https://github.com/typicode/cult
->npm install -g gulp cult
+`npm install -g gulp cult`
 
 ### task dependencies ###
 to run 'preTask' each time before running 'myTask', do:  

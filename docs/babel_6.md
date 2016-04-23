@@ -18,7 +18,7 @@ gulp.task('transpile', function() {
 });
 ```
 
-### .babelrc ###  
+### .babelrc
 create .babelrc file
 ```javascript
 //.babelrc

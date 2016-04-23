@@ -3,7 +3,7 @@
 - install:  
 `npm install markdown-include`
 
-create markdown.json file:  
+- create markdown.json file:  
 ```js
 {
   "build" : "./README.md",
