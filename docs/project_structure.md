@@ -27,7 +27,7 @@
 - .babelrc *(configuration for transpiling with babel)*
 - .gitattributes
 - .gitignore *(lists what should be ignored for git repo)*
-- README.md  *(project documentation with links to further info in the docs dir)*
+- README.md  *(project documentation compiled with markdown-inclue, with links to further info in the docs dir)*
 - gulpfile.babel.js *(gulp tasks defined here)*
 - markdown.json *(configuration to compile docs with markdown-include)*
 - package.json *(lists project info and package dependencies)*
