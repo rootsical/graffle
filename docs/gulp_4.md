@@ -1,4 +1,4 @@
-# GULP 4 SETUP #
+## GULP 4 SETUP ##
 
 ### global ###
 `npm install -g gulp-cli`  

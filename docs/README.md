@@ -5,7 +5,7 @@ application to learn graph databases in javascript. i am just using this as a le
 #include "./docs/project_structure.md"
 #include "./docs/todo.md"
 
-# LEARNING #
+## LEARNING ##
 - [babel 6](./docs/babel_6.md)
 - [electron](./docs/electron.md)
 - [git and github](./docs/git.md)
@@ -14,5 +14,5 @@ application to learn graph databases in javascript. i am just using this as a le
 - [npm](./docs/npm.md)
 - [markdown-include](./docs/markdown_include.md)
 
-# PLAN #
+## PLAN ##
 Project [plan](./docs/plan.md).

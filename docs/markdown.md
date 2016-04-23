@@ -1,6 +1,6 @@
-# MARKDOWN #
+## markdown ##
 
-## info sources ##
+### info sources ###
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ### list items ###

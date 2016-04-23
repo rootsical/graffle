@@ -1,29 +1,29 @@
 # GRAFFLE #
 application to learn graph databases in javascript. i am just using this as a learning exercise and am only working on it from time to time..
 
-# SETUP & DEPENDENCIES #
+## SETUP & DEPENDENCIES ##
 
 Uses:
 - Electron
 - Babel 6
 - Gulp 4
 
-## INITIALISE PROJECT ##
+### INITIALISE PROJECT ###
 ```
 npm init
 ```
 
-## GLOBAL ##
+### GLOBAL ###
 ```
 npm install -g gulp-cli electron-prebuilt mocha electron-mocha cult
 ```
 
-## PROJECT DEPENDENCIES ##
+### PROJECT DEPENDENCIES ###
 ```
 // none at the moment
 ```
 
-## DEVELOPMENT DEPENDENCIES ##
+### DEVELOPMENT DEPENDENCIES ###
 ```
 npm install --save-dev \
   "gulpjs/gulp#4.0" \
@@ -42,7 +42,7 @@ npm install --save-dev \
   markdown-include
 ```
 
-# PROJECT STRUCTURE
+## PROJECT STRUCTURE ##
 
 - **db/** *(database)*
 - **docs/**
@@ -77,31 +77,31 @@ npm install --save-dev \
 - package.json *(lists project info and package dependencies)*
 
 
-# TO DO #
+## TO DO ##
 
-## TO DO (now): ##
+### TO DO (now): ###
 - [ ] learn how to vary tasks according to environment (production/development)
 - [ ] look at representing nodes/edges in javascript
 - [ ] learn gremlin language
 - [ ] learn javascript es classes
 - [ ] learn javascript es iterators
 
-## TO DO (long term): ##
+### TO DO (long term): ###
 - [ ] visualization of graph database
 - [ ] learn functional programming
 - [ ] learn how to do testing for an application
 
-## DONE: ##
+### DONE: ###
 - [x] concatenate README.md in gulp task for easier viewing (using markdown-include)
 - [x] remove leveldb docs
 - [x] error reporting from transpiled code (sourcemaps)
 - [x] work out if you can just transpile modules (with babel) and use other es next features natively
 
-## ABANDONED: ##
+### ABANDONED: ###
 
 
 
-# LEARNING #
+## LEARNING ##
 - [babel 6](./docs/babel_6.md)
 - [electron](./docs/electron.md)
 - [git and github](./docs/git.md)
@@ -110,5 +110,5 @@ npm install --save-dev \
 - [npm](./docs/npm.md)
 - [markdown-include](./docs/markdown_include.md)
 
-# PLAN #
+## PLAN ##
 Project [plan](./docs/plan.md).

@@ -1,4 +1,4 @@
-# ELECTRON #
+## ELECTRON ##
 
 - install `electron` command globally:  
 `npm install electron-prebuilt -g`  

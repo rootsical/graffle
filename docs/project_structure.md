@@ -1,4 +1,4 @@
-# PROJECT STRUCTURE
+## PROJECT STRUCTURE ##
 
 - **db/** *(database)*
 - **docs/**

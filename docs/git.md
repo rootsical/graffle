@@ -1,14 +1,14 @@
-# GIT #
+## git ##
 
-## configuration ##
+### configuration ###
 
-### user configuration ###
+- user configuration
 `git config --global`
 
-### project configuration ###
+- project configuration
 `git config`
 
-### global ###
+- global 
 `core.editor "sublime_text -wl1"`  
 (-w flag is for terminal to wait for edit to be made and -l1 flag to start on line 1)
 
@@ -21,14 +21,14 @@
 `push.default simple`  
 (not sure what it does but avoids annoying message on doing `git push`)
 
-### user ###
+- user
 `user.name "rootsical"`  
 `user.email "rootsical@gmail.com"`
 
-### list configuration ###
+- list configuration
 `git config --list`
 
-## git ignore ##
+### git ignore ###
 create *.gitignore* file in project root:  
 ```
 node_modules/
@@ -40,7 +40,7 @@ logs
 databases (db/)
 ```
 
-## init ##
+### init ###
 now you can initialise git in project root:  
 `git init`
 
@@ -51,7 +51,7 @@ now set username and email
 if you use the wrong username and email for the last commit, you can reset the git config and then do:  
 `git commit --amend --reset-author`
 
-## github setup ##
+### github setup ###
 create new repository on github
 
 locally in project root edit  
@@ -70,7 +70,7 @@ the rest after the colon is the github repository name ending in .git, in this c
 instead of editing local .git/config file you can do:  
 `git remote add origin rootsical-github:rootsical/noted.git`
 
-## GENERAL ##
+### general commands ###
 - remove file from staging index  
 `git reset HEAD -- <path/to/file>`
 - remove directory  
@@ -102,7 +102,7 @@ example:
 `git rebase -i HEAD~2`  
 which will rebase from 2 commits prior to where you currently are.
 
-## BRANCHES and REMOTES ##
+### BRANCHES and REMOTES ###
 - origins/master is local branch that references remote branch called master
 - you still have a local branch called master
 - push will send local branch info to remote and origin
@@ -138,7 +138,7 @@ to delete a remote branch:
 to prune remote tracking branches:  
 `git remote prune origin`
 
-## MERGING ##
+### MERGING ###
 info source:  
 http://stackoverflow.com/questions/6127328/how-can-i-delete-all-git-branches-which-have-been-merged
 

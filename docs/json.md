@@ -1,4 +1,4 @@
-# JSON #
+## json ##
 
 you can use *'fs-extra'* to read/write json files:  
 https://github.com/jprichardson/node-fs-extra

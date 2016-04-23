@@ -1,26 +1,26 @@
-# SETUP & DEPENDENCIES #
+## SETUP & DEPENDENCIES ##
 
 Uses:
 - Electron
 - Babel 6
 - Gulp 4
 
-## INITIALISE PROJECT ##
+### INITIALISE PROJECT ###
 ```
 npm init
 ```
 
-## GLOBAL ##
+### GLOBAL ###
 ```
 npm install -g gulp-cli electron-prebuilt mocha electron-mocha cult
 ```
 
-## PROJECT DEPENDENCIES ##
+### PROJECT DEPENDENCIES ###
 ```
 // none at the moment
 ```
 
-## DEVELOPMENT DEPENDENCIES ##
+### DEVELOPMENT DEPENDENCIES ###
 ```
 npm install --save-dev \
   "gulpjs/gulp#4.0" \

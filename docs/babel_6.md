@@ -1,4 +1,4 @@
-# BABEL 6 SETUP #
+## BABEL 6 SETUP ##
 
 ### install babel ###
 `npm install --save-dev babel-core babel-plugin-transform-es2015-modules-commonjs gulp-babel gulp-plumber`  

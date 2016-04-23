@@ -1,4 +1,4 @@
-# ELECTRON MOCHA #
+## ELECTRON MOCHA ##
 
 - install electron-mocha:  
 `npm install -g electron-mocha`
